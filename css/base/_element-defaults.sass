@@ -1,8 +1,11 @@
 body
   font-family: $body-font
+  color: $grey-1
+  font-size: 16px
 
 h1, h2, h3, h4, h5
   font-family: $heading-font
+  color: $black
 
 // HEADING FONT SIZES BASED ON http://type-scale.com/, SCALE USED IS MAJOR THIRD
 h1
@@ -17,17 +20,18 @@ h3
 h4
   font-size: 1.25em
 
-// // MOBILE
-// $mobile
-//   body
-//     font-size: 16px
+a
+  text-decoration: none
+  color: $primary-color
+  &:hover
+    text-decoration: underline
 
-// // TABLET
-// $tablet
-//   body
-//     font-size: 16px
+// TABLET
+@media (min-width: $bp-mobile) and (max-width: $bp-tablet)
+  body
+    font-size: 18px
 
-// // DESKTOP
-// $desktop
-//   body
-//     font-size: 18px
+// DESKTOP
+@media (min-width: $bp-desktop)
+  body
+    font-size: 18px

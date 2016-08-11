@@ -1,17 +1,14 @@
-// GENERAL
+// MOBILE
+@media (max-width: $bp-mobile)
+  .hide-on-mobile
+    display: none
 
+// TABLET
+@media (min-width: $bp-mobile) and (max-width: $bp-tablet)
+  .hide-on-tablet
+    display: none
 
-// // MOBILE
-// $mobile
-//   .hide-on-mobile
-//     display: none
-
-// // TABLET
-// $tablet
-//   .hide-on-tablet
-//     display: none
-
-// // DESKTOP
-// $desktop
-//   .hide-on-desktop
-//     display: none
+// DESKTOP
+@media (min-width: $bp-desktop)
+  .hide-on-desktop
+    display: none
